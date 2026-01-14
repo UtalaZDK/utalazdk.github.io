@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>我的第一个 GitHub Pages 网站</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
-        h1 { color: #333; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
 </head>
 <body>
-    <h1>Hello World! 你好，世界！</h1>
-    <p>这是我的 GitHub Pages 网站。</p >
-    <p>我正在学习如何使用它。</p >
-    <p>Present Time:2026/January/14</p >
-    < img src="https://octodex.github.com/images/stormtroopocat.jpg" alt="GitHub Octocat" width="200">
+    <header>
+        <h1><a href=" '/' | relative_url }}">{{ site.title }}</a ></h1>
+        <p>{{ site.description }}</p >
+        <nav>
+            <a href="{{ '/' | relative_url }}">首页</a >
+            <a href="{{ '/about' | relative_url }}">关于</a >
+            <a href="{{ '/archive' | relative_url }}">归档</a >
+        </nav>
+    </header>
+    
+    <main>
+        {{ content }}  <!-- 页面内容将插入这里 -->
+    </main>
+    
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</p >
+        <p>使用 <a href="https://jekyllrb.com/">Jekyll</a > 构建</p >
+    </footer>
 </body>
 </html>
