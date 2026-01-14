@@ -1,3 +1,8 @@
-theme: L
-title: M
-description: Bookmark this to keep an eye on my project updates!
+title: The Zone of UtalaZDK
+email: 351712075@qq.com
+description: This is a personal blog based on GitHub. Wishing happiness and joy to whoever is reading this description.
+baseurl: "" # 保持为空即可
+url: "https://utalazdk.github.io"
+
+# 告诉 Jekyll 使用什么主题
+theme: minima
