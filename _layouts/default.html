@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title> <!-- 这里的 {{ }} 是 Jekyll 的自动填空功能 -->
+</head>
+<body>
+    <!-- 这里就是引用 _includes 的地方，后面会讲 -->
+    {% include header.html %}
+
+    <main>
+        {{ content }} <!-- 这是最关键的：你的文章内容会显示在这里 -->
+    </main>
+
+    <footer>
+        <p>© {{ site.time | date: '%Y' }} 我的个人网站</p >
+    </footer>
+</body>
+</html>
