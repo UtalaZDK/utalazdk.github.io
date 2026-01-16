@@ -1,0 +1,86 @@
+---
+# 这个开头让 Jekyll 处理 SCSS
+---
+
+/* 引入 Google 字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+:root{
+  --accent:#2b7cff;
+  --muted:#6b7280;
+  --max-width:980px;
+}
+
+/* 全站基础排版 */
+body {
+  font-family: "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
+  color: #111827;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0 16px;
+  background: #fff;
+}
+
+/* 内容容器居中并设宽度 */
+.site {
+  max-width: var(--max-width);
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+/* 标题风格 */
+h1{
+  font-family: "Roboto Slab", serif;
+  font-weight:700;
+  color: var(--accent);
+  margin-top: 0.2em;
+}
+h2{ color:#0f172a; }
+
+/* 简洁的 hero 区 */
+.hero{
+  text-align:center;
+  padding: 34px 10px;
+  background: linear-gradient(180deg, rgba(43,124,255,0.06), rgba(43,124,255,0.02));
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+/* 图片响应式 */
+.responsive-img{
+  max-width:100%;
+  height:auto;
+  border-radius:8px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+/* 项目卡片网格 */
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid rgba(15,23,42,0.06);
+}
+.card h3 { margin: 8px 0 4px; }
+.card p { color: var(--muted); font-size:0.95rem; }
+
+/* footer 简洁 */
+.site-footer {
+  margin-top: 36px;
+  padding: 18px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align:center;
+}
+
+/* 小屏适配 */
+@media (max-width:480px){
+  :root{ --max-width: 100%; }
+  .hero { padding: 20px 8px; }
+}
