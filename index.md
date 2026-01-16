@@ -1,28 +1,79 @@
+# 🎉 欢迎来到我的频道！
+
+**很高兴遇见你！我是 UtalaZDK**
+
+📱 **QQ:** 351712075  
+🎬 **B站ID:** 狮子王NO1  
+⏰ **网站创建时间:** 2026年1月16日  
+🕒 **当前时间:** <span id="currentTime">加载中...</span>
+
 ---
-layout: default
-title: The Zone of UtalaZDK
+
+## 🚀 我的项目
+
+### 项目A
+这个项目将在今年寒假期间揭晓（至少我是这么计划的）✨
+
 ---
 
-## 欢迎来到我的频道！
+## 📝 博客与笔记
+我会在这里发布学习笔记和心得分享。
 
-很高兴遇见你，这是我的 QQ 号：351712075，和 B 站 ID：狮子王NO1。
+**最近计划：**
+- HTML/CSS 学习笔记
+- GitHub Pages 使用教程
+- 编程学习心得
 
-这是我的 GitHub Pages 网站。我正在学习如何使用它。
+---
 
-Present Time: 2026/January/16
+## 🔗 快速链接
+- [关于我](about.md)
+- [我的B站主页](https://b23.tv/0mZ7o8n)
+- [学习资源](resources.md)
 
-<!-- 插入图片（示例：外部图片） -->
-![My VX profile picture](/assets/limbo.jpg){:width="200px"}
-<section>
-    <h2>我的项目</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>项目 A</h3>
-        <p>The project will be uncovered in this winter vacation(at least i plan that)</p>
-      </div>
-      <div class="card">
-        <h3>博客与笔记</h3>
-        <p>我会在这里发布学习笔记。。</p>
-      </div>
-    </div>
-  </section>
+---
+
+## 📚 今日学习提示
+> 每天进步一点点，坚持带来大改变！
+
+<script>
+// 简单的JavaScript显示时间
+function updateTime() {
+    const now = new Date();
+    const timeString = now.toLocaleString('zh-CN', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+    document.getElementById('currentTime').textContent = timeString;
+}
+updateTime();
+setInterval(updateTime, 60000);
+</script>
+
+<style>
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #16a085;
+}
+</style>
